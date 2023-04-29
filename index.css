@@ -14,9 +14,11 @@
         padding: 0;
         color: white;
     }
+
     html {
         scroll-behavior: smooth;
     }
+
     .container {
         width: 100%;
         height: 100vh;
@@ -381,12 +383,15 @@
         float: right;
         width: 50%;
     }
+
     .newsletter h3 {
         color: #AF9331;
     }
-    .newsletter input[type='email']:focus{
+
+    .newsletter input[type='email']:focus {
         outline: none;
     }
+
     #new_mail {
         color: black;
         position: relative;
@@ -394,9 +399,10 @@
         left: 15%;
         z-index: 5;
     }
+
     .newsletter input[type='email'] {
         height: 46px;
-        border:none;
+        border: none;
         width: 60%;
         position: relative;
         top: 20px;
@@ -405,49 +411,61 @@
         padding-left: 50px;
         border-radius: 50px;
     }
+
     .newsletter input[type='submit'] {
         border-radius: 50px;
         height: 46px;
-        border:none;
+        border: none;
         font-weight: bold;
         width: 20%;
         top: 20px;
         position: relative;
         right: 10%;
-        background-color:#AF9331;
+        background-color: #AF9331;
     }
+
     .foot_head .logo {
         position: relative;
         top: 41%;
         width: 80%;
     }
+
     .foot_bottom h3 {
         color: #AF9331;
         font-size: 19px;
         font-weight: bolder;
     }
+
     .foot_bottom hr {
         margin-top: 15px;
         border: 2px solid #AF9331;
         border-radius: 20px;
         width: 51px;
     }
-    .foot_bottom h3, .foot_bottom hr{
-        margin-left:28%;
+
+    .foot_bottom h3,
+    .foot_bottom hr {
+        margin-left: 28%;
     }
+
     .foot_bottom .bt_left {
         width: 30%;
-       
+        position: relative;
+        right: 3pc;
+
     }
+
     .foot_bottom .bt_left ul {
-        list-style:none ;
+        list-style: none;
     }
+
     .foot_bottom .bt_left .right {
         float: right;
         top: -11.4pc;
         left: 66px;
         position: relative;
     }
+
     .foot_bottom ul li {
         padding-left: 20px;
         background: url('bullet_point.png');
@@ -455,32 +473,103 @@
         position: relative;
         display: flex;
         background-position: 0% 84%;
-        top:-20px;
+        top: -20px;
         background-repeat: no-repeat;
     }
+
     .foot_bottom ul li a {
         height: 1px;
         text-decoration: none;
     }
+
     .foot_bottom .bt_middle {
         /* float: right; */
-        left: 40%;
+        left: 35%;
         width: 35%;
+        overflow: hidden;
         top: -27.7pc;
         position: relative;
     }
-    .foot_bottom .bt_right{
+
+    .foot_bottom {
+        height: 18pc;
+    }
+
+    .foot_bottom .bt_right {
         width: 41%;
-        left:-3%;
+        overflow: hidden;
+        left: -3%;
         float: right;
         top: -43pc;
         position: relative;
     }
+
+    .copyright {
+        width: 100%;
+        position: relative;
+        top: 100px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 12px;
+        padding-top: 11px;
+        z-index: 12;
+        height: 2pc;
+        background-color: #AF9331;
+    }
+
+    #arrow {
+        color: #AF9331;
+        font-size: 20px;
+        position: relative;
+        width: 21px;
+        border-radius: 20px;
+        height: 20px;
+        left: -30px;
+        background-color: black;
+        top: -19px;
+        float: right;
+        animation: move 2s ease-in-out infinite;
+    }
+
+    #arrow.move {
+        top: 100px;
+        /* move the element 200px to the right */
+    }
+
+
+
+
+
+
+
+
+    @keyframes move {
+        0% {
+            transform: translateX(0);
+            /* start at the initial position */
+        }
+
+        50% {
+            transform: translateY(10px);
+            /* move the element 200px to the right */
+        }
+
+        100% {
+            transform: translateX(0);
+            /* move the element back to the initial position */
+        }
+    }
+    #last_hr {
+        border: 2px solid white;
+        z-index: 9;
+        width: 100%;
+    }
+
     footer {
         background-color: black;
         position: relative;
         top: 130px;
         overflow: hidden;
-        height: 35pc;
+        height: 40pc;
     }
 }

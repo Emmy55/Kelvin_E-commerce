@@ -1,301 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bokosh</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="index.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <div class="logo">
-            <h2>BOKOSH</h2>
-        </div>
-        <ul>
-            <li>HOME</li>
-            <li>MEN</li>
-            <li>WOMEN</li>
-            <li>KIDDIES</li>
-            <li>ALL CATEGORIES</li>
-        </ul>
-        <input type="search" placeholder="Search Products" />
-        <div class="icons">
-            <i class="fa-solid fa-magnifying-glass" id="search"></i>
-            <img src="profile.png" alt="profile" id="profile" />
-            <img src="cart.png" alt="cart" />
-        </div>
+      <div class="logo">
+        <h2>BOKOSH</h2>
+      </div>
+      <ul>
+        <li>HOME</li>
+        <li>MEN</li>
+        <li>WOMEN</li>
+        <li>KIDDIES</li>
+        <li>ALL CATEGORIES</li>
+      </ul>
+      <input type="search" placeholder="Search Products" />
+      <div class="icons">
+        <i class="fa-solid fa-magnifying-glass" id="search"></i>
+        <img src="profile.png" alt="profile" id="profile" />
+        <img src="cart.png" alt="cart" />
+      </div>
     </nav>
-    <div class="container">
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="hero_text">
-                <h1>Step Up Your Style.</h1>
-                <p>
-                    Discover the Latest Trends in Men's Fashion at Our Online Store.
-                </p>
-                <a href="#">SHOP NOW</a>
-            </div>
-
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <img src="hero_image.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="hero_image1.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="hero_image2.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="hero_image3.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="hero_image4.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="hero_image5.png" alt="" />
-                </div>
-                ...
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+    <div class="container" id="cont">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="hero_text">
+          <h1>Step Up Your Style.</h1>
+          <p>
+            Discover the Latest Trends in Men's Fashion at Our Online Store.
+          </p>
+          <a href="#">SHOP NOW</a>
         </div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="hero_image.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="hero_image1.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="hero_image2.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="hero_image3.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="hero_image4.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="hero_image5.png" alt="" />
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
     <div class="category">
-        <i class="fa-solid fa-chevron-left" id="prev"></i>
+      <i class="fa-solid fa-chevron-left" id="prev"></i>
 
-        <div class="all_category">
-            <div class="all">
-                <img src="category1.png" alt="" />
-                <h3>Men’s Collections</h3>
-            </div>
-
-            <div class="all">
-                <img src="category2.png" alt="" />
-                <h3>Women’s Collections</h3>
-            </div>
-            <div class="all">
-                <img src="category3.png" alt="" />
-                <h3>Kids Collections</h3>
-            </div>
-            <div class="all">
-                <img src="category4.png" alt="" />
-                <h3>Electronics</h3>
-            </div>
-            <div class="all">
-                <img src="category4.png" alt="" />
-                <h3>Electronics</h3>
-            </div>
-            <div class="all">
-                <img src="category4.png" alt="" />
-                <h3>Electronics</h3>
-            </div>
-            <div class="all">
-                <img src="category4.png" alt="" />
-                <h3>Electronics</h3>
-            </div>
+      <div class="all_category">
+        <div class="all">
+          <img src="category1.png" alt="" />
+          <h3>Men’s Collections</h3>
         </div>
-        <i class="fa-solid fa-chevron-right" id="next"></i>
+
+        <div class="all">
+          <img src="category2.png" alt="" />
+          <h3>Women’s Collections</h3>
+        </div>
+        <div class="all">
+          <img src="category3.png" alt="" />
+          <h3>Kids Collections</h3>
+        </div>
+        <div class="all">
+          <img src="category4.png" alt="" />
+          <h3>Electronics</h3>
+        </div>
+        <div class="all">
+          <img src="category4.png" alt="" />
+          <h3>Electronics</h3>
+        </div>
+        <div class="all">
+          <img src="category4.png" alt="" />
+          <h3>Electronics</h3>
+        </div>
+        <div class="all">
+          <img src="category4.png" alt="" />
+          <h3>Electronics</h3>
+        </div>
+      </div>
+      <i class="fa-solid fa-chevron-right" id="next"></i>
     </div>
 
     <div class="middle">
-        <div class="top_middle"></div>
+      <div class="top_middle"></div>
 
-        <div class="all_product">
-            <div class="product">
-                <img src="product1.png" alt="" />
-                <div class="ab">
-                    <h3>Trendy Men’s Lace up sneakers</h3>
-                    <p>NGN 15,000</p>
-                </div>
-            </div>
-            <div class="product">
-                <img src="product1.png" alt="" />
-                <div class="ab">
-                    <h3>Trendy Men’s Lace up sneakers</h3>
-                    <p>NGN 15,000</p>
-                </div>
-            </div>
-            <div class="product">
-                <img src="product1.png" alt="" />
-                <div class="ab">
-                    <h3>Trendy Men’s Lace up sneakers</h3>
-                    <p>NGN 15,000</p>
-                </div>
-            </div>
-            <div class="product">
-                <img src="product1.png" alt="" />
-                <div class="ab">
-                    <h3>Trendy Men’s Lace up sneakers</h3>
-                    <p>NGN 15,000</p>
-                </div>
-            </div>
-            <div class="product">
-                <img src="product1.png" alt="" />
-                <div class="ab">
-                    <h3>Trendy Men’s Lace up sneakers</h3>
-                    <p>NGN 15,000</p>
-                </div>
-            </div>
-            <div class="product">
-                <img src="product1.png" alt="" />
-                <div class="ab">
-                    <h3>Trendy Men’s Lace up sneakers</h3>
-                    <p>NGN 15,000</p>
-                </div>
-            </div>
-            <div class="product">
-                <img src="product1.png" alt="" />
-                <div class="ab">
-                    <h3>Trendy Men’s Lace up sneakers</h3>
-                    <p>NGN 15,000</p>
-                </div>
-            </div>
-            <div class="product">
-                <img src="product1.png" alt="" />
-                <div class="ab">
-                    <h3>Trendy Men’s Lace up sneakers</h3>
-                    <p>NGN 15,000</p>
-                </div>
-            </div>
+      <div class="all_product">
+        <div class="product">
+          <img src="product1.png" alt="" />
+          <div class="ab">
+            <h3>Trendy Men’s Lace up sneakers</h3>
+            <p>NGN 15,000</p>
+          </div>
         </div>
+        <div class="product">
+          <img src="product1.png" alt="" />
+          <div class="ab">
+            <h3>Trendy Men’s Lace up sneakers</h3>
+            <p>NGN 15,000</p>
+          </div>
+        </div>
+        <div class="product">
+          <img src="product1.png" alt="" />
+          <div class="ab">
+            <h3>Trendy Men’s Lace up sneakers</h3>
+            <p>NGN 15,000</p>
+          </div>
+        </div>
+        <div class="product">
+          <img src="product1.png" alt="" />
+          <div class="ab">
+            <h3>Trendy Men’s Lace up sneakers</h3>
+            <p>NGN 15,000</p>
+          </div>
+        </div>
+        <div class="product">
+          <img src="product1.png" alt="" />
+          <div class="ab">
+            <h3>Trendy Men’s Lace up sneakers</h3>
+            <p>NGN 15,000</p>
+          </div>
+        </div>
+        <div class="product">
+          <img src="product1.png" alt="" />
+          <div class="ab">
+            <h3>Trendy Men’s Lace up sneakers</h3>
+            <p>NGN 15,000</p>
+          </div>
+        </div>
+        <div class="product">
+          <img src="product1.png" alt="" />
+          <div class="ab">
+            <h3>Trendy Men’s Lace up sneakers</h3>
+            <p>NGN 15,000</p>
+          </div>
+        </div>
+        <div class="product">
+          <img src="product1.png" alt="" />
+          <div class="ab">
+            <h3>Trendy Men’s Lace up sneakers</h3>
+            <p>NGN 15,000</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="discount">
-        <div class="discount_shop">
-            <h3>Get up to 10%</h3>
-            <h1>Discount</h1>
-            <h2>On All Sales This Week</h2>
-            <a href=".">SHOP NOW</a>
-        </div>
-        <div class="all_discount"></div>
-        <div class="all_discount"></div>
-        <div class="all_discount"></div>
-        <div class="all_discount"></div>
+      <div class="discount_shop">
+        <h3>Get up to 10%</h3>
+        <h1>Discount</h1>
+        <h2>On All Sales This Week</h2>
+        <a href=".">SHOP NOW</a>
+      </div>
+      <div class="all_discount"></div>
+      <div class="all_discount"></div>
+      <div class="all_discount"></div>
+      <div class="all_discount"></div>
     </div>
 
     <img id="all_img" src="all_image.png" alt="" />
     <div class="top_selling"></div>
     <div class="our_store">
-        <div class="head">
-            <h2>Our Store Has It All, Shop From Our Collections!</h2>
+      <div class="head">
+        <h2>Our Store Has It All, Shop From Our Collections!</h2>
+      </div>
+      <div class="all_store">
+        <div class="all">
+          <img src="category1.png" alt="" />
+          <h3>Men’s Collections</h3>
         </div>
-        <div class="all_store">
-            <div class="all">
-                <img src="category1.png" alt="" />
-                <h3>Men’s Collections</h3>
-            </div>
 
-            <div class="all">
-                <img src="category2.png" alt="" />
-                <h3>Women’s Collections</h3>
-            </div>
-            <div class="all">
-                <img src="category3.png" alt="" />
-                <h3>Kids Collections</h3>
-            </div>
-            <div class="all">
-                <img src="category3.png" alt="" />
-                <h3>Kids Collections</h3>
-            </div>
-            <div class="all">
-                <img src="category4.png" alt="" />
-                <h3>Electronics</h3>
-            </div>
-            <div class="all">
-                <img src="category4.png" alt="" />
-                <h3>Electronics</h3>
-            </div>
-            <div class="all">
-                <img src="category4.png" alt="" />
-                <h3>Electronics</h3>
-            </div>
-            <div class="all">
-                <img src="category4.png" alt="" />
-                <h3>Electronics</h3>
-            </div>
+        <div class="all">
+          <img src="category2.png" alt="" />
+          <h3>Women’s Collections</h3>
         </div>
+        <div class="all">
+          <img src="category3.png" alt="" />
+          <h3>Kids Collections</h3>
+        </div>
+        <div class="all">
+          <img src="category3.png" alt="" />
+          <h3>Kids Collections</h3>
+        </div>
+        <div class="all">
+          <img src="category4.png" alt="" />
+          <h3>Electronics</h3>
+        </div>
+        <div class="all">
+          <img src="category4.png" alt="" />
+          <h3>Electronics</h3>
+        </div>
+        <div class="all">
+          <img src="category4.png" alt="" />
+          <h3>Electronics</h3>
+        </div>
+        <div class="all">
+          <img src="category4.png" alt="" />
+          <h3>Electronics</h3>
+        </div>
+      </div>
     </div>
     <footer>
-        <div class="foot_head">
-            <div class="logo">
-                <h2>BOKOSH</h2>
-            </div>
-            <div class="newsletter">
-                <h3>We love to keep you updated with our new offers</h3>
-                <h2>Subscribe to our newsletter now!</h2>
-                <form action="">
-                    <i class="fa-solid fa-envelope" id="new_mail"></i>
-                    <input type="email" placeholder="Enter Your Email" />
-                    <input type="submit" value="SUBSCRIBE NOW" />
-                </form>
-            </div>
+      <div class="foot_head">
+        <div class="logo">
+          <h2>BOKOSH</h2>
         </div>
-        <div class="foot_bottom">
-            <div class="bt_left">
-                <h3>CATEGORIES LINKS</h3>
-                <hr />
-                <ul>
-                    <li><a href=".">Men Collection</a></li>
-                    <li><a href=".">Women Collection</a></li>
-                    <li><a href=".">Kids Collection</a></li>
-                    <li><a href=".">Fashion Accessories</a></li>
-                    <li><a href=".">Other Categories</a></li>
-                </ul>
+        <div class="newsletter">
+          <h3>We love to keep you updated with our new offers</h3>
+          <h2>Subscribe to our newsletter now!</h2>
+          <form action="">
+            <i class="fa-solid fa-envelope" id="new_mail"></i>
+            <input type="email" placeholder="Enter Your Email" />
+            <input type="submit" value="SUBSCRIBE NOW" />
+          </form>
+        </div>
+      </div>
+      <div class="foot_bottom">
+        <div class="bt_left">
+          <h3>CATEGORIES LINKS</h3>
+          <hr />
+          <ul>
+            <li><a href=".">Men Collection</a></li>
+            <li><a href=".">Women Collection</a></li>
+            <li><a href=".">Kids Collection</a></li>
+            <li><a href=".">Fashion Accessories</a></li>
+            <li><a href=".">Other Categories</a></li>
+          </ul>
 
+          <ul class="right">
+            <li><a href=".">Phones & Gadgets</a></li>
+            <li><a href=".">Laptops & Accessories</a></li>
+            <li><a href=".">TV & Electronics</a></li>
+            <li><a href=".">Home Appliances</a></li>
+            <li><a href=".">Furniture & Beddings</a></li>
+          </ul>
+        </div>
+        <div class="bt_middle">
+          <h3>OTHER LINKS</h3>
+          <hr />
+          <ul>
+            <li><a href=".">Home</a></li>
+            <li><a href=".">About Us</a></li>
+            <li><a href=".">Shop</a></li>
+            <li><a href=".">Account</a></li>
+            <li><a href=".">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="bt_right">
+          <h3>HOW CAN BOKOSH HELP YOU</h3>
+          <hr />
+          <ul>
+            <li><a href=".">Delivery Anywhere in Nigeria</a></li>
+            <li><a href=".">Shopping Online</a></li>
+            <li><a href=".">Return & Refund Policy</a></li>
+            <li><a href=".">Report a Problem</a></li>
+            <li><a href=".">Our Offices & Warehouse</a></li>
+          </ul>
 
-                <ul class="right">
-                    <li><a href=".">Phones & Gadgets</a></li>
-                    <li><a href=".">Laptops & Accessories</a></li>
-                    <li><a href=".">TV & Electronics</a></li>
-                    <li><a href=".">Home Appliances</a></li>
-                    <li><a href=".">Furniture & Beddings</a></li>
-                </ul>
-                
-            </div>
-            <div class="bt_middle">
-                <h3>OTHER LINKS</h3>
-                <hr>
-                <ul>
-                    <li><a href=".">Home</a></li>
-                    <li><a href=".">About Us</a></li>
-                    <li><a href=".">Shop</a></li>
-                    <li><a href=".">Account</a></li>
-                    <li><a href=".">Terms & Conditions</a></li>
-                </ul>
-            </div>
-            <div class="bt_right">
-                <h3>HOW CAN BOKOSH HELP YOU</h3>
-                <hr>
-                <ul>
-                    <li><a href=".">Delivery Anywhere in Nigeria</a></li>
-                    <li><a href=".">Shopping Online</a></li>
-                    <li><a href=".">Return & Refund Policy</a></li>
-                    <li><a href=".">Report a Problem</a></li>
-                    <li><a href=".">Our Offices & Warehouse</a></li>
-                </ul>
-            </div>
-            <hr>
         </div>
-        <div class="copyright">
-            <p>Copyright &copy; 2017 <a href="http://www.nigeria.com">Nigeria</a></p>
-        </div>
+        <hr id="last_hr">
+
+      </div>
     </footer>
-    <script></script>
-    <script src="https://kit.fontawesome.com/9da17deac8.js" crossorigin="anonymous"></script>
+    <div class="copyright">
+      <p>Copyright &copy; Bokosh 2023</p>
+
+      <i
+        onclick="location.href='#cont'"
+        class="fa-solid fa-arrow-up"
+        id="arrow"
+      ></i>
+    </div>
+    <script>
+      const scrollLeft = document.querySelector("#prev");
+      const scrollRight = document.querySelector("#next");
+      const scrollContent = document.querySelector(".all_category");
+
+      scrollLeft.addEventListener("click", () => {
+        scrollContent.scrollBy({
+          left: -400,
+          behavior: "smooth",
+        });
+      });
+
+      scrollRight.addEventListener("click", () => {
+        scrollContent.scrollBy({
+          left: 400,
+          behavior: "smooth",
+        });
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/9da17deac8.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
