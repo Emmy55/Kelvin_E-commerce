@@ -26,9 +26,13 @@
 
   <body>
     <nav>
+      <div class="burger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
       <div class="logo">
         <h2>BOKOSH</h2>
       </div>
+
       <ul>
         <li>HOME</li>
         <li>MEN</li>
@@ -36,7 +40,7 @@
         <li>KIDDIES</li>
         <li>ALL CATEGORIES</li>
       </ul>
-      <input type="search" placeholder="Search Products" />
+      <input type="search" id="all_search" placeholder="Search Products" />
       <div class="icons">
         <i class="fa-solid fa-magnifying-glass" id="search"></i>
         <img src="profile.png" alt="profile" id="profile" />
@@ -119,7 +123,6 @@
 
     <div class="middle">
       <div class="top_middle"></div>
-
       <div class="all_product">
         <div class="product">
           <img src="product1.png" alt="" />
@@ -194,7 +197,78 @@
     </div>
 
     <img id="all_img" src="all_image.png" alt="" />
-    <div class="top_selling"></div>
+    <div class="top_selling tp">
+      <div class="top_middle">
+        <h4>See All <i class="fa-solid fa-arrow-right-long"></i></h4>
+        <h3>Top Selling</h3>
+      </div>
+      <div class="all_product">
+        <div class="product top_sell">
+          <img src="product1.png" alt="" />
+          <div class="ab">
+            <h3>Trendy Men’s Lace up sneakers</h3>
+            <p>NGN 15,000</p>
+            <button type="submit">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product">
+          <img src="product1.png" alt="" />
+          <div class="ab">
+            <h3>Trendy Men’s Lace up sneakers</h3>
+            <p>NGN 15,000</p>
+            <button type="submit">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product">
+          <img src="product1.png" alt="" />
+          <div class="ab">
+            <h3>Trendy Men’s Lace up sneakers</h3>
+            <p>NGN 15,000</p>
+            <button type="submit">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product">
+          <img src="product1.png" alt="" />
+          <div class="ab">
+            <h3>Trendy Men’s Lace up sneakers</h3>
+            <p>NGN 15,000</p>
+            <button type="submit">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product">
+          <img src="product1.png" alt="" />
+          <div class="ab">
+            <h3>Trendy Men’s Lace up sneakers</h3>
+            <p>NGN 15,000</p>
+            <button type="submit">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product">
+          <img src="product1.png" alt="" />
+          <div class="ab">
+            <h3>Trendy Men’s Lace up sneakers</h3>
+            <p>NGN 15,000</p>
+            <button type="submit">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product">
+          <img src="product1.png" alt="" />
+          <div class="ab">
+            <h3>Trendy Men’s Lace up sneakers</h3>
+            <p>NGN 15,000</p>
+            <button type="submit">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product">
+          <img src="product1.png" alt="" />
+          <div class="ab">
+            <h3>Trendy Men’s Lace up sneakers</h3>
+            <p>NGN 15,000</p>
+            <button type="submit">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="our_store">
       <div class="head">
         <h2>Our Store Has It All, Shop From Our Collections!</h2>
@@ -291,12 +365,22 @@
             <li><a href=".">Report a Problem</a></li>
             <li><a href=".">Our Offices & Warehouse</a></li>
           </ul>
-
         </div>
-        <hr id="last_hr">
-
       </div>
     </footer>
+    <hr id="last_hr" />
+    <div class="payment">
+      <h3>PAYMENTS METHOD</h3>
+      <h2>CONNECT WITH US</h2>
+      <div class="socials">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+      <!-- <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt=""> -->
+    </div>
     <div class="copyright">
       <p>Copyright &copy; Bokosh 2023</p>
 
@@ -307,22 +391,54 @@
       ></i>
     </div>
     <script>
+      var body = document.getElementsByTagName("body")[0];
+      var elementToShow = document.getElementById("all_search");
+      var button = document.getElementById("search");
+
+      body.addEventListener("click", function () {
+        if (elementToShow.style.display !== "none") {
+          elementToShow.style.display = "none";
+        }
+      });
+
+      button.addEventListener("click", function () {
+        elementToShow.style.display = "block";
+      });
+    </script>
+    <script>
       const scrollLeft = document.querySelector("#prev");
       const scrollRight = document.querySelector("#next");
       const scrollContent = document.querySelector(".all_category");
 
       scrollLeft.addEventListener("click", () => {
         scrollContent.scrollBy({
-          left: -400,
+          left: -300,
           behavior: "smooth",
         });
       });
 
       scrollRight.addEventListener("click", () => {
         scrollContent.scrollBy({
-          left: 400,
+          left: 300,
           behavior: "smooth",
         });
+      });
+    </script>
+    <script>
+      btn = document.querySelector(".burger");
+
+      navlist = document.querySelector("ul");
+
+      bod = document.querySelector("#head");
+
+      btn1 = document.querySelector(".burger1");
+      btn.addEventListener("click", () => {
+        navlist.classList.toggle("clipped").checked;
+      });
+      ul = document.getElementById("hamburger");
+
+      ul.addEventListener("click", () => {
+        navlist.classList.toggle("clipped").checked = false;
       });
     </script>
     <script
