@@ -14,7 +14,7 @@
     }
 
     .container {
-        width: 102%;
+        width: 100%;
         height:90vh;
         display: flex;
         justify-content: center;
@@ -24,12 +24,15 @@
 
     .swiper {
         width: 100%;
+        position: relative;
+        top: -7px;
         /* margin: 0; */
         height: 33pc;
     }
 
     .swiper-wrapper img {
-        width: 105.1%;
+        overflow: hidden;
+        width: 102%;
         height: 100%;
         position: relative;
         left: -15px;
@@ -114,7 +117,7 @@
         transition: 0.4s all;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
-    ul {
+    nav ul {
         position: absolute;
         background-color:#AF9331;
         left: 0;
@@ -193,7 +196,8 @@
     .category {
         background: #DEDEDE80;
         height: 21pc;
-
+        /* width: 101.9%; */
+        /* margin: 0; */
     }
 
     .all_category {
@@ -204,7 +208,7 @@
         column-gap: 20px;
         position: relative;
         top: 2.5pc;
-        left: 8%;
+        left: 6%;
         width: 88%;
         /* height: 43%; */
         scrollbar-width: none;
@@ -280,9 +284,9 @@
     }
     #prev {
         color: white;
-        height: 26px;
-        width: 30px;
-        padding-top: 5px;
+        height: 20px;
+        width: 20px;
+        padding: 5px;
         text-align: center;
         overflow: hidden;
         top: 85.75%;
@@ -424,7 +428,7 @@
     .foot_head {
         position: relative;
         width: 100%;
-        height: 229.48px;
+        height: 279.48px;
         left: 0px;
         margin-bottom: 40px;
         background: linear-gradient(to right, rgba(255, 255, 255, 0.275), black);
@@ -432,11 +436,10 @@
 
     .newsletter {
         position: relative;
-        /* left: 30%; */
+        left: 3.5%;
         top: 28px;
         text-align: center;
-        float: right;
-        width: 50%;
+        width: 92%;
     }
 
     .newsletter h3 {
@@ -450,18 +453,21 @@
     #new_mail {
         color: black;
         position: relative;
-        top: 20px;
-        left: 15%;
+        top: 53px;
+        left: -40%;
         z-index: 5;
     }
-
+    .newsletter h3, .newsletter h2 {
+        font-size: 15px;
+        margin-top: 13px;
+    }
     .newsletter input[type='email'] {
         height: 46px;
         border: none;
-        width: 60%;
+        width: 80%;
         position: relative;
         top: 20px;
-        left: 62px;
+        left: .5%;
         font-weight: bold;
         color: black;
         padding-left: 50px;
@@ -473,22 +479,25 @@
         height: 46px;
         border: none;
         font-weight: bold;
-        width: 20%;
-        top: 20px;
+        width: 29%;
+        font-size: 10px;
+        top: -26px;
         position: relative;
-        right: 10%;
         background-color: #AF9331;
+        float: right;
     }
 
     .foot_head .logo {
         position: relative;
-        top: 41%;
-        width: 80%;
+        top: 8%;
+        width: 40%;
+        text-align: center;
     }
 
     .foot_bottom h3 {
         color: #AF9331;
-        font-size: 19px;
+        font-size: 21px;
+        width: 100%;
         font-weight: bolder;
     }
 
@@ -501,49 +510,63 @@
 
     .foot_bottom h3,
     .foot_bottom hr {
-        margin-left: 28%;
+        margin-left: 18%;
     }
 
     .foot_bottom .bt_left {
-        width: 30%;
+        width: 100%;
+        color: white;
         position: relative;
-        right: 3pc;
+        /* right: 3pc; */
 
     }
 
     .foot_bottom .bt_left ul {
+        line-height: 1;
+        height: 20px;
         list-style: none;
+
     }
 
     .foot_bottom .bt_left .right {
         float: right;
         top: -11.4pc;
-        left: 66px;
+        /* left: 66px; */
         position: relative;
     }
 
     .foot_bottom ul li {
-        padding-left: 20px;
+        /* padding-left: 20px; */
         background: url('bullet_point.png');
         background-size: 20px 20px;
         position: relative;
+        /* margin-left: 50px; */
+        position: relative;
+        line-height: 1.3;
+        left: 10%;
         display: flex;
+        z-index: 90;
+        color: white;
         background-position: 0% 84%;
-        top: -20px;
+        /* top: -20px; */
         background-repeat: no-repeat;
     }
 
     .foot_bottom ul li a {
+        color: white;
         height: 1px;
+        font-size: 12px;
+        z-index: 30;
         text-decoration: none;
     }
 
     .foot_bottom .bt_middle {
         /* float: right; */
+        display: none;
         left: 35%;
         width: 35%;
         overflow: hidden;
-        top: -27.7pc;
+        /* top: -27.7pc; */
         position: relative;
     }
 
@@ -554,6 +577,7 @@
     .foot_bottom .bt_right {
         width: 41%;
         overflow: hidden;
+        display: none;
         left: -3%;
         float: right;
         top: -43pc;
@@ -671,21 +695,20 @@
     }
     .payment h2 {
         text-align: center;
-        top: 1.1pc;
+        top: 3pc;
         width: 40%;
-        font-size: 17px;
-        left:53.6%;
+        font-size: 15px;
+        left:3.6%;
         position: relative;
         color: #AF9331;
     }
     .socials i {
-        top: -0.4pc;
+        top: 1.4pc;
         width: 40%;
         font-size: 17px;
         display: inline;
-        display: none;
         padding: 10px;
-        left:81%;
+        left:50%;
         font-size: 30px;
         position: relative;
         color:#AF9331;
@@ -695,7 +718,7 @@
         position: relative;
         top: 130px;
         overflow: hidden;
-        height: 44pc;
+        height: 54pc;
     }
 }
 @media screen and (min-width:768px) {}
@@ -799,7 +822,7 @@
         line-height: 29px;
     }
 
-    ul {
+    nav ul {
         position: relative;
         top: 20px;
     }
