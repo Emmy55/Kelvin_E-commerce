@@ -1034,7 +1034,7 @@
         font-size: 17px;
 
     }
-
+    
     .discount {
         width: 93%;
         height: 300px;
@@ -1329,6 +1329,17 @@
             transform: translateX(0);
             /* move the element back to the initial position */
         }
+    }
+    .middle .top_middle h3 {
+        font-size: 27px;
+        padding: 17px 0px 0px 58px;
+    }
+    .middle .top_middle h4 {
+        float: right;
+        top: 25px;
+        left: -40px;
+        cursor: pointer;
+        position: relative;
     }
     .top_selling{
         width: 93%;
