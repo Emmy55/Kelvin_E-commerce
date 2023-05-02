@@ -328,11 +328,11 @@
     }
 
     .ab h3 {
-        font-size: 17px;
+        font-size: 13px;
     }
 
     .ab p {
-        font-size: 15px;
+        font-size: 13px;
 
     }
 
@@ -341,42 +341,52 @@
         height: 300px;
         margin-bottom: 10px;
         position: relative;
+        top: -13pc;
         left: 3.4%;
         background-color: #EFEBC3;
     }
 
     .discount_shop {
         /* margin-left: 10px; */
-        height: 300px;
+        height: 90px;
         padding: 0px;
         border-radius: 5px;
         text-align: center;
-        width: 296px;
+        width: 100%;
         background-color: #AF9331;
     }
-
+    #all_img {
+        display: none;
+    }
+    #all_img1 {
+        position: relative;
+        left: 3.2%;
+        top: -5pc;
+    }
     .discount_shop h1,
     .discount_shop h2,
     .discount_shop h3 {
-        top: 40px;
+        font-size: 18px;
+        top: 10px;
         position: relative;
     }
-
-    .discount_shop h1 {
-        font-size: 39px;
+    .discount .all_discount img {
+        width:17%;
     }
-
-    .discount_shop h2 {
-        font-size: 20px;
+    .discount .all_discount {
+        display: inline;
+        top: -91%;
+        padding: 8px;
+        z-index: 3;
+        /* width: 30%; */
+        height: 210px;
+        background-color: rgb(255, 255, 255);
+        left: 25%;
+        position: relative;
     }
-
-    .discount_shop h3 {
-        font-size: 25px;
-    }
-
     .discount_shop a {
-        font-size: 17px;
-        padding: 20px 30px 20px 30px;
+        font-size: 13px;
+        padding: 10px 15px 10px 15px;
         position: relative;
         top: 88px;
         border-radius: 90px;
@@ -403,28 +413,39 @@
     .all_store {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: -70px;
+        margin-bottom: -40px;
+        height: 48pc;
         padding: 20px 20px 25px 20px;
-        row-gap: 10px;
+        row-gap: 5 0px;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-        column-gap: 15px;
+        column-gap: 25px;
     }
 
     .all_store .all {
         height: 100px;
         width:40%;
+        padding: 9px;
+        position: relative;
+        left: -5%;
     }
-
+    .all_store .all h3 {
+        position: relative;
+        left: 13%;
+        font-size: 13px;
+        /* width: 107%; */
+    }
     .all_store .all img {
+        height: 8pc;
         width: 10pc;
         border-radius: 10px;
     }
 
     .our_store .head {
-        height: 60px;
+        height: 50px;
         text-align: center;
         width: 100%;
-        padding-top: 23px;
+        padding-top: 9px;
+        font-size: 10px;
         left: 3.4%;
         background-color: #AF9331;
     }
@@ -649,12 +670,13 @@
         position: relative;
     }
     .top_selling .top_middle h3 {
-        font-size: 27px;
-        padding: 17px 0px 0px 58px;
+        font-size: 20px;
+        padding: 20px 0px 0px 35px;
     }
     .top_selling .top_middle h4 {
         float: right;
-        top: 25px;
+        top: 23px;
+        font-size: 14px;
         left: -40px;
         cursor: pointer;
         position: relative;
@@ -735,6 +757,9 @@
         color: white;
     }
     .burger {
+        display: none;
+    }
+    #all_img1 {
         display: none;
     }
     html {
@@ -1018,26 +1043,35 @@
         width: 296px;
         background-color: #AF9331;
     }
-
+    .discount .all_discount img {
+        width:17%;
+    }
+    .discount .all_discount {
+        display: inline;
+        top: -91%;
+        padding: 8px;
+        z-index: 3;
+        /* width: 30%; */
+        height: 210px;
+        background-color: rgb(255, 255, 255);
+        left: 25%;
+        position: relative;
+    }
     .discount_shop h1,
     .discount_shop h2,
     .discount_shop h3 {
         top: 40px;
         position: relative;
     }
-
     .discount_shop h1 {
         font-size: 39px;
     }
-
     .discount_shop h2 {
         font-size: 20px;
     }
-
     .discount_shop h3 {
         font-size: 25px;
     }
-
     .discount_shop a {
         font-size: 17px;
         padding: 20px 30px 20px 30px;
