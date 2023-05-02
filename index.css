@@ -418,7 +418,7 @@
         padding: 20px 20px 25px 25px;
         row-gap: 50px;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-        column-gap: 15px;
+        column-gap: 37px;
     }
 
     .all_store .all {
@@ -426,7 +426,7 @@
         width:38%;
         padding: 7px;
         position: relative;
-        left: -3%;
+        left: -6%;
     }
     .all_store .all h3 {
         position: relative;
