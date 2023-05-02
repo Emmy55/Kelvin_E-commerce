@@ -430,9 +430,9 @@
     }
     .all_store .all h3 {
         position: relative;
-        left: 13%;
+        left: 30%;
         font-size: 13px;
-        /* width: 107%; */
+        /* width: 100%; */
     }
     .all_store .all img {
         height: 8pc;
