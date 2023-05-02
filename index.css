@@ -423,10 +423,10 @@
 
     .all_store .all {
         height: 100px;
-        width:37%;
+        width:36%;
         padding: 7px;
         position: relative;
-        left: -5%;
+        left: -8%;
     }
     .all_store .all h3 {
         position: relative;
