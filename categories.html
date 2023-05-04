@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Category</title>
+  <style>
+    @media screen and (min-device-width: 0) and (max-device-width: 767px) {
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .left_side {
+        height: 190vh;
+        width: 70%;
+        overflow-y: scroll;
+        position: fixed;
+        z-index: 40;
+        overflow: hidden;
+      }
+
+     
+
+      .clipped {
+        transition-timing-function: ease-in-out;
+        transition: 0.4s all;
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+
+      ul {
+        position: absolute;
+        background-color: #AF9331;
+        left: 0;
+        padding-top: 50px;
+        z-index: 2;
+        top: -10px;
+        border-radius: 0px 10px 10px 0px;
+        right: 0;
+        /* height: 60pc; */
+        width: 165%;
+        text-align: center;
+        transition: .5s all;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+      }
+
+      a {
+        display: block;
+        padding: 20px;
+        font-weight: bolder;
+        top: 1px;
+        color: white;
+        position: relative;
+      }
+
+      .links a:hover {
+        background-color: #af9431a3;
+      }
+
+      .links a.active {
+        background-color: #af943176;
+      }
+
+      .links a:nth-child(1) {
+        border-radius: 20px 20px 0px 0px;
+      }
+
+      .links a:last-child {
+        border-radius: 0px 0px 20px 20px;
+      }
+
+      /* .links {
+        display: flex;
+        flex-wrap: wrap;
+      } */
+      .all {
+        display: none;
+      }
+
+      .burger {
+        position: absolute;
+        display: block;
+        background-color: #AF9331;
+        z-index: 20;
+        padding: 12px;
+        font-size: 30px;
+      }
+        
+      .links a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        /* height: 30px; */
+        width: 85%;
+        text-align: center;
+
+        font-weight: bolder;
+        background-color: #af9331;
+        border: none;
+      }
+
+
+
+
+
+
+
+
+
+
+      
+
+    .links a:hover {
+      background-color: #af9431a3;
+    }
+
+    .links a.active {
+      background-color: #af943176;
+    }
+    h1 {
+      text-align:center;
+      font-weight: bolder;
+      color: #000000;
+    }
+    
+    hr {
+      position: relative;
+      left: 20%;
+      border: 2px solid #000000;
+      border-radius: 20px;
+      width: 60%;
+    }
+
+    .all {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      /* gap: 4px; */
+      /* height: 50px; */
+      float: right;
+    }
+
+    .all .prod {
+      background-color: #af9331;
+      height: 15pc;
+      border-radius: 20px;
+      width: 43%;
+      margin: 10px;
+      right: -1.5%;
+      position: relative;
+      top: 6.5pc;
+    }
+   
+    .all .prod h3,
+    .all .prod p,
+    .all .prod button {
+      position: relative;
+      /* left: 20%; */
+      font-size: 15px;
+      text-align: center;
+      /* align-items: center; */
+      width: 100%;
+      top: -2%;
+    }
+    .all .prod h3{
+      font-size: 13px;
+      width: 101%;
+    }
+    .all .prod p {
+      font-size: 12px;
+      position: relative;
+    }
+
+    .all .prod button {
+      /* padding: 5px 50px 5px 60px; */
+      height: 12%;
+      border-radius: 10px;
+      border: none;
+      font-weight: bolder;
+      width: 53%;
+      position: relative;
+      left: 24%;
+      top: -6px;
+      font-size: 12px;
+      /* text-align: center; */
+    }
+
+    .all img {
+      width: 100%;
+      border-radius: 20px 20px 0px 0px;
+      height: 69%;
+    }
+
+    .all h2 {
+      width: 100%;
+      position: relative;
+      top: 6pc;
+      padding: 16px;
+      text-align: center;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+    }
+
+    @media screen and (min-width:1200px) {
+      .links a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        height: 30px;
+        border: 0.1px solid black;
+        width: 100%;
+        /* justify-content: center; */
+        text-align: center;
+        padding: 18px 0px 1px 0px;
+        border-bottom: none;
+
+        font-weight: bolder;
+        background-color: #af9331;
+      }
+
+      .links a:hover {
+        background-color: #af9431a3;
+      }
+
+      .links a.active {
+        background-color: #af943176;
+      }
+
+      .links a:first-child {
+        border-radius: 20px 20px 0px 0px;
+      }
+
+      .links a:last-child {
+        border-radius: 0px 0px 20px 20px;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      /* .burger {
+      display: none;
+    } */
+      .left_side {
+        /* height: 190vh; */
+        width: 20%;
+        overflow-y: scroll;
+        position: fixed;
+        top: 10%;
+        overflow: hidden;
+      }
+
+      h1 {
+        font-weight: bolder;
+        position: fixed;
+        color: #af9331;
+        top: 0px;
+        margin-bottom: 90%;
+      }
+
+      .burger {
+        display: none;
+      }
+
+      hr {
+        margin: 0px 2px 20px 2px;
+        border: 2px solid #af9331;
+        border-radius: 20px;
+        position: relative;
+        top: -17px;
+        width: 51px;
+      }
+
+      .all {
+        display: flex;
+        flex-wrap: wrap;
+        width: 75%;
+        height: 50px;
+        float: right;
+      }
+
+      .all .prod {
+        background-color: #af9331;
+        height: 20pc;
+        border-radius: 20px;
+        width: 30%;
+        margin: 10px;
+        position: relative;
+        top: 6.5pc;
+      }
+
+      .all .prod h3,
+      .all .prod p,
+      .all .prod button {
+        position: relative;
+        /* left: 20%; */
+        text-align: center;
+        /* align-items: center; */
+        width: 100%;
+        top: -5%;
+      }
+
+      .all .prod p {
+        position: relative;
+        top: -30px;
+      }
+
+      .all .prod button {
+        padding: 10px 30px 10px 30px;
+        border-radius: 20px;
+        border: none;
+        font-weight: bolder;
+        width: 50%;
+        position: relative;
+        top: -12%;
+        left: 25%;
+        /* text-align: center; */
+      }
+
+      .all img {
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+        height: 69%;
+      }
+
+      .all h2 {
+        width: 100%;
+        position: relative;
+        top: 6pc;
+        text-align: center;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  
+  
+  <div class="left_side">
+    
+    <div class="burger">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div id="">
+      <ul class="links">
+        <h1>Categories</h1>
+<hr />
+        <a href="#men">Men's Collection</a>
+        <a href="#women">Women’s Collection</a>
+        <a href="#kids">Kiddies Collection</a>
+        <a href="#shoes">Shoes & Bags</a>
+        <a href="#fashion">Fashion Accessories</a>
+        <a href="#phone">Phones & Gadgets</a>
+        <a href="#electronics">TV & Electronics</a>
+        <a href="#home">Home Appliances</a>
+        <a href="#laptops">Laptops & Computers</a>
+        <a href="#furniture">Furniture & Beddings</a>
+        <a href="#other">Other Categories</a>
+      </ul>
+    </div>
+  </div>
+  <div class="all">
+    <h2 id="men">Men's Collection</h2>
+    <div class="prod">
+      <img src="category1.png" alt="" />
+      <h3>Trendy Men’s Lace up sneakers</h3>
+      <p><strong>NGN 15,000</strong></p>
+      <button>Add to Cart</button>
+    </div>
+    <h2 id="women">Women’s Collection</h2>
+    <div class="prod">
+      <img src="category1.png" alt="" />
+      <h3>Trendy Men’s Lace up sneakers</h3>
+      <p><strong>NGN 15,000</strong></p>
+      <button>Add to Cart</button>
+    </div>
+    
+    <h2 id="kids">Kiddies Collection</h2>
+    <div class="prod">
+      <img src="category1.png" alt="" />
+      <h3>Trendy Men’s Lace up sneakers</h3>
+      <p><strong>NGN 15,000</strong></p>
+      <button>Add to Cart</button>
+    </div>
+    <h2 id="shoes">Shoes & Bags</h2>
+    <div class="prod">
+      <img src="category1.png" alt="" />
+      <h3>Trendy Men’s Lace up sneakers</h3>
+      <p><strong>NGN 15,000</strong></p>
+      <button>Add to Cart</button>
+    </div>
+    <h2 id="fashion">Fashion Accessories</h2>
+    <div class="prod">
+      <img src="category1.png" alt="" />
+      <h3>Trendy Men’s Lace up sneakers</h3>
+      <p><strong>NGN 15,000</strong></p>
+      <button>Add to Cart</button>
+    </div>
+    <h2 id="phone">Phones & Gadgets</h2>
+    <div class="prod">
+      <img src="category1.png" alt="" />
+      <h3>Trendy Men’s Lace up sneakers</h3>
+      <p><strong>NGN 15,000</strong></p>
+      <button>Add to Cart</button>
+    </div>
+    <h2 id="electronics">TV & Electronics</h2>
+    <div class="prod">
+      <img src="category1.png" alt="" />
+      <h3>Trendy Men’s Lace up sneakers</h3>
+      <p><strong>NGN 15,000</strong></p>
+      <button>Add to Cart</button>
+    </div>
+    <h2 id="home">Home Appliances</h2>
+    <div class="prod">
+      <img src="category1.png" alt="" />
+      <h3>Trendy Men’s Lace up sneakers</h3>
+      <p><strong>NGN 15,000</strong></p>
+      <button>Add to Cart</button>
+    </div>
+    <h2 id="laptops">Laptops & Computers</h2>
+    <div class="prod">
+      <img src="category1.png" alt="" />
+      <h3>Trendy Men’s Lace up sneakers</h3>
+      <p><strong>NGN 15,000</strong></p>
+      <button>Add to Cart</button>
+    </div>
+    <h2 id="furniture">Furniture & Beddings</h2>
+    <div class="prod">
+      <img src="category1.png" alt="" />
+      <h3>Trendy Men’s Lace up sneakers</h3>
+      <p><strong>NGN 15,000</strong></p>
+      <button>Add to Cart</button>
+    </div>
+    <h2 id="other">Other Categories</h2>
+    <div class="prod">
+      <img src="category1.png" alt="" />
+      <h3>Trendy Men’s Lace up sneakers</h3>
+      <p><strong>NGN 15,000</strong></p>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+
+  <script>
+    btn = document.querySelector(".burger");
+    body = document.querySelector("body")
+    navlist = document.querySelector("ul");
+
+    bod = document.querySelector("#head");
+
+    btn1 = document.querySelector(".burger1");
+
+    btn.addEventListener("click", () => {
+      navlist.classList.toggle("clipped").checked;
+    });
+    ul = document.getElementById("hamburger");
+
+    ul.addEventListener("click", () => {
+      navlist.classList.toggle("clipped").checked = false;
+    });
+  </script>
+  <script>
+    let section = document.querySelectorAll('.prod');
+    let lists = document.querySelectorAll('a');
+    function activeLink(li) {
+      lists.forEach((item) => item.classList.remove('active'));
+      li.classList.add('active');
+    }
+    lists.forEach((item) =>
+      item.addEventListener('click', function () {
+        activeLink(this);
+      }));
+
+    window.onscroll = () => {
+      section.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if (top >= offset && top < offset + height) {
+          const target = document.querySelector(`[href='#${id}']`).parentElement;
+          activeLink(target);
+        }
+      })
+    };
+  </script>
+  <script src="https://kit.fontawesome.com/9da17deac8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+</script>
+</body>
+
+</html>
