@@ -10,9 +10,10 @@
 
 <body>
     <div class="all_forms">
-        <div class="create">
-            <form action="">
-                <h2>Create an account</h2>
+        <div class="create" >
+            <form action="" style="left: 18px; position: relative;">
+                <h2>Create An Account</h2>
+                <hr style="left: -18px; position: relative;" id="h2_id">
                 <label for="input">
                     <strong>First name</strong>
                     <br />
@@ -21,6 +22,10 @@
                     <strong>Last name</strong>
                     <br />
                     <input id="full_name" type="text" /> </label><br /><br />
+                <label for="input">
+                    <strong>Phone Number</strong>
+                    <br />
+                    <input id="full_name" type="number" /> </label><br /><br />
                 <label for="input">
                     <strong>Email</strong>
                     <br />
@@ -39,7 +44,10 @@
                 <input style="width: 90%;" type="submit" value="Create account" class="account_create" />
             </form>
             <div class="bottom">
-            <p id="acc">Already have account? <a href="{% url 'login'%}">Login</a></p>
+            <p>By signing up you accept our <a href="#">terms and conditions</a> & <a href="#">privacy policy</a></p>
+
+            <p>Already have an Account?</p>
+            <input style="left: 8px; position: relative;" id="create_acc" type="submit" value="Login">
 
             </div>
         </div>

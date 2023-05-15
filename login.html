@@ -14,24 +14,26 @@
     <div class="all_forms">
         <div class="create" style="top: 8pc;">
 
-            <form action="">
-                <h2>Login account</h2>
+            <form action="" style="left: 13px; position: relative;">
+                <h2>Login</h2>
+                <hr id="h2_id">
                 <label for="input">
-                    <strong>Username</strong>
+                    <strong>Email Address or Phone number</strong>
                     <br>
                     <input id="full_name" type="text">
                 </label><br><br>
                 <label for="input">
-                    <strong>Password</strong>
+                    <strong>Password</strong> 
+                    <a id="forgotpass" href="#">forgot password?</a>
                     <br>
                     <input id="full_name" type="password">
                 </label><br><br>
                 <input type="submit" value="Login" class="account_create">
 
             </form>
-            <div class="bottom">
-                <p class="have">Dont't have account? <a href="{% url 'signin' %}">Sign in</a></p>
-                <p class="forgot"><a href="{% url 'forgot_password' %}">Forgot password?</a></p>
+            <div class="bottom" style="left: 13px; position: relative;">
+               <p style="color: black;">Don't have an account?</p>
+               <input id="create_acc" type="submit" value="Create an Account">
             </div>
         </div>
 </body>

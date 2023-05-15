@@ -35,21 +35,49 @@ label {
 
 }
 .create h2 {
-    width: 70%;
+    width: 100%;
     position: relative;
-    left: 2%;
+    text-align: center;
     top: 40px;
     font-size: 30px;
 }
-.account_create{
+#h2_id {
+    position: relative;
+    top: 30px;
+    border: 1.5px solid #AF9331;
+}
+.account_create, #create_acc{
     position: relative;
     left: .5%;
     color: white;
     width: 96%;
+    font-size: 18px;
     border: none;
     top: 60px;
     height: 37px;
     background-color: #AF9331;
+}
+.bottom p {
+    text-align: center;
+    width: 87%;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    top: 60%;
+    font-size: 14px;
+}
+#create_acc{
+    background-color: rgba(236, 229, 229, 0.527);
+    color: #AF9331;
+    border: 1px solid black;
+    font-weight: bolder;
+    
+}
+#forgotpass{
+    float: right;
+    position: relative;
+    left: -17px;
+    text-decoration: underline;
 }
 .create a {
     color: blueviolet;
@@ -89,6 +117,7 @@ label {
   .create {
     width: 100%;
     max-width: 400px;
+    
     padding: 20px;
     box-shadow: 2px 2px 4px rgba(159, 37, 37, 0.2);
     border: 1px solid #ccc;
@@ -97,6 +126,8 @@ label {
 input {
     width: 90%;
     padding: 10px;
+    border-radius: 5px;
+    border: .1px solid black;
     margin-bottom: 10px;
   }
   input:focus {
@@ -104,5 +135,6 @@ input {
     outline: none;
   }
   .bottom {
+    margin-bottom: 30%;
     height: 7pc;
   }
